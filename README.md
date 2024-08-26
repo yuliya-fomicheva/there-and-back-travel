@@ -21,7 +21,4 @@
 <img src = "screenshots/footer.png">
 
 ## Мобильная версия 
-<img src = "screenshots/header-mobile.jpg" width=300> <img src = "screenshots/offer-mobile.jpg" width=300> <img src = "screenshots/popular-mobile.jpg" width=300> 
-
-
-<img src = "screenshots/team-mobile.jpg" width=300> <img src = "screenshots/footer-mobile.jpg" width=300>
+<img src = "screenshots/header-mobile.jpg" width=300> <img src = "screenshots/offer-mobile.jpg" width=300> <img src = "screenshots/popular-mobile.jpg" width=300> <img src = "screenshots/team-mobile.jpg" width=300><img src ="screenshots/footer-mobile.jpg" width=300>
