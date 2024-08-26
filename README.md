@@ -3,7 +3,7 @@
 
 <b> Задача: </b> Сайт адаптируется под экраны декстопных и мобильных версий
 
-<b> Оборудование: </b> HTML, CSS, JS, [бесплатный макет Figma](clck.ru/3CqiEx), как основа
+<b> Оборудование: </b> HTML, CSS, JS, [бесплатный макет Figma](https://clck.ru/3CqiEx), как основа
 
 ## Шапка 
 <img src = "screenshots/header.png">
