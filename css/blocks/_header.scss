@@ -1,0 +1,44 @@
+ .header {
+    background-position: 40% top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 633px;
+    background-image: url("../img/header-background.png");
+    background-color: #669999;
+    
+    &__wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-bottom: 230px;
+        align-items: baseline;
+
+        @media (min-width:$size-tablet) and (max-width: $size-desktop) {
+            
+            max-width: $size-desktop;
+            margin-bottom: 440px;
+        
+            justify-content: space-around;
+        }
+
+        @media (min-width: $size-desktop) {
+            max-width:  $size-desktop;
+            margin-bottom: 440px;
+            }
+            
+        }
+            
+    &__logo {
+        width: 45px;
+        height: 53px;
+        margin-top: 5px;
+
+        @media (min-width: $size-desktop) {
+            width: 75px;
+            height: 83px;
+        }
+    }
+
+}
+

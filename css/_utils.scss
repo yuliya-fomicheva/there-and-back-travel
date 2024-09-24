@@ -1,0 +1,100 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 50px 20px;
+    max-width: 1180px;
+}
+
+.button {
+    display: inline-block;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+    padding: 16px 36px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--color-dark-green);
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:focus, 
+    &:hover {
+        background-color: var(--color-white);
+        color: var(--color-dark-green);
+    }
+}
+
+
+.addition {
+    text-transform: lowercase;
+    font-size: 24px;
+    font-weight: 400;
+
+    color: var(--color-yellow);
+
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 120%;
+    margin-bottom: 32px;
+}
+
+
+.list  {
+    padding-left: 5px; 
+    list-style: none;
+    background-color: var(--color-dark-green);
+}
+
+.list__item {
+    a {
+        color: var(--color-white);
+        position: relative;
+        display: block;
+        padding: 8px 3px;
+        line-height: 18px;
+        font-weight: 400;
+        font-size: 16px;
+
+        &::after {
+            content: url("../img/icon/Frame.svg");
+            top: 8px;
+            left: -10px;
+            position: absolute;
+        }
+
+        &:focus,
+        &:hover {
+            color: var(--color-yellow);
+        }
+
+        &:hover::after,
+        &:focus::after {
+            content: url("../img/icon/frame-active.svg");
+            top: 8px;
+            left: -10px;
+            position: absolute;
+        }
+    }
+}

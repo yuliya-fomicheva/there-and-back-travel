@@ -1,0 +1,139 @@
+.main-nav {
+    position: relative;
+
+
+
+    &__toggle {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        z-index: 10;
+
+        display: block;
+        width: 30px;
+        height: 30px;
+
+        border: none;
+        background: transparent;
+
+        cursor: pointer;
+
+        @media (min-width: $size-tablet) {
+            display: none;
+        }
+    }
+
+
+    &_opend {
+        background-color: #1A3E3E;
+        width: 100%;
+
+        .main-nav__toggle::before {
+            content: url("../img/icon/close-icon.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            width: 30px;
+            height: 30px;
+            
+        } 
+
+        .main-nav__item {
+            @media (max-width: $size-tablet) {
+                display: block;
+            }
+        }
+
+
+    }
+
+    &_closed 
+    {
+        .main-nav__toggle::before {
+            content: url("../img/icon/menu-icon.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            width: 30px;
+            height: 30px;
+        }
+
+        .main-nav__item {
+            @media (max-width: $size-tablet) {
+                display: none;
+            }
+        }
+    } 
+
+
+
+    &__list {
+        margin-top: 50px;
+        padding-left: 25px;
+
+        @media (min-width: $size-tablet)  {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            background-color: transparent;
+            list-style: none;
+        
+
+            a::after {
+                    content: "";
+                }
+
+            a:hover::after,
+            a:focus::after {
+                    content: "";
+            }
+        }
+    }
+
+    &__item {
+        @media (min-width: $size-tablet)  {
+            margin-right: 24px;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--color-dark-green)
+                }
+                
+                }
+            }
+    }
+    
+
+
+    &__button {
+        display: none;
+
+        @media (min-width: $size-tablet)  {
+            display: block;
+            padding: 12px 24px;
+        }
+    }
+
+    
+    &__wrapper {
+
+
+        @media (min-width: $size-tablet)  {
+            
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                box-sizing: border-box;
+                padding-top: 50px;
+                padding-right: 20px;
+                align-items: baseline;
+            }
+        
+    }
+
+} 

@@ -1,0 +1,40 @@
+.team {
+    background-color: var(--color-white);
+
+    @media (min-width: $size-desktop) {
+            margin: auto;
+            max-width: 1180px;
+            text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__teammate-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    &__timmate-item {
+        min-width: 300px;
+        display: block;
+        padding: 15px;
+        text-align: center;
+
+        img {
+            border-radius: 50%;
+        }
+
+        @media (min-width: $size-desktop) {
+            min-width: 330px;
+            display: block;
+        }
+    }
+
+}

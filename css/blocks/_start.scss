@@ -1,0 +1,52 @@
+.start {
+
+    &__title {
+        margin-bottom: 32px;
+        display: block;
+    
+        font-size: 35px;
+        font-weight: 800;
+        color: var(--color-white);
+        line-height: 150%;
+        text-transform: uppercase;
+
+        @media (min-width:$size-desktop) {
+                font-size: 70px;
+            }
+        
+    }
+    
+    
+    &__button {
+        background-color: var(--color-white);
+        border-color: var(--color-dark-green);
+        color: var(--color-dark-green);
+        margin-bottom: 85px;
+    }
+    
+    
+    &__wrapper {
+    
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 20px;
+    
+    }
+        
+}
+
+.search__button {
+    background-color: var(--color-white);
+    border-color: var(--color-dark-green);
+    color: var(--color-dark-green);
+    margin-bottom: 85px;
+}
+
+.search__button:focus,
+.search__button:hover {
+    background-color: var(--color-dark-green);
+    border-color: var(--color-dark-green);
+    color: var(--color-white);
+}
+
+

@@ -1,0 +1,59 @@
+.contacts {
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-bottom: 30px;
+
+        a {
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        @media (min-width: $size-modile) {
+            justify-content: start; 
+        }
+        
+    }
+
+    &__description {
+        margin-bottom: 30px;
+
+    }
+    &__social-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    &__link-item {
+        margin-right: 16px;
+    }
+
+    &__email { 
+        &:hover,
+        &:focus {
+            color: var(--color-yellow);
+        }   
+    }
+
+    &__phone
+    {   &:hover,
+        &:focus {
+        color: var(--color-yellow);
+        }
+    }
+    &__social-link
+    {
+        &:hover,
+        &:focus {
+            
+            path {
+                fill: var(--color-yellow);
+            } 
+        }
+    }
+}
+
+
